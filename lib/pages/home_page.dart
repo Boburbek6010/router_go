@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:router_go/widgets/item_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -54,10 +53,6 @@ class HomePage extends StatelessWidget {
     // }
 
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text("Home Page"),
-      ),
       body: ListView.builder(
         padding: const EdgeInsets.symmetric(vertical: 50),
         itemCount: items.length,
